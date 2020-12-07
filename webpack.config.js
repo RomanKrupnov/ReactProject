@@ -1,5 +1,5 @@
-const path = require("path");
-const webpack = require('webpack');
+const path = require("path")
+const webpack = require('webpack')
 
 module.exports = {
     entry: {
@@ -11,7 +11,14 @@ module.exports = {
         filename: 'app.js',
         publicPath: '/static/build/',
     },
-
+    devtool: 'source-map',
+    devServer: {
+        port: 8080
+    },
+    resolve : {
+        modules : [ ` ${__dirname} /static_src` , 'node_modules' ] ,
+        extensions : [ '.js' , '.jsx' ] ,
+    } ,
     module: {
         rules: [
             {
@@ -21,8 +28,20 @@ module.exports = {
                 exclude: /node_modules/,
                 options: {
                     presets: ['@babel/env', '@babel/react'],
+                    plugins : [
+                        [
+                            "@babel/plugin-proposal-class-properties" ,
+                            {
+                                "loose" : true
+                            }
+                        ]
+                    ]
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader',
             },
         ],
     },
-};
+}
