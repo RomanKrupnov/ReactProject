@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 import React from 'react';
 import ReactDOM from 'react-dom';
+=======
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/Layout.jsx'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+>>>>>>> Stashed changes
 
 
 let messages = ['Сообщение Олегу', 'Как дела?'];
@@ -11,6 +18,14 @@ const MessageField = (props) => {
 };
 
 ReactDOM.render(
+<<<<<<< Updated upstream
     <MessageField messages={ messages } />,
     document.getElementById('root'),
 );
+=======
+    <MuiThemeProvider>
+        <App />
+    </MuiThemeProvider>,
+    document.getElementById('root'),
+)
+>>>>>>> Stashed changes
