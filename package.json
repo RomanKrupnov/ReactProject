@@ -1,7 +1,7 @@
 {
-  "name": "123",
+  "name": "react-course",
   "version": "1.0.0",
-  "description": "readme",
+  "description": "reactjs course",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@babel/cli": "^7.5.0",
     "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
@@ -21,17 +22,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "style-loader": "^2.0.0",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RomanKrupnov/ReactProject.git"
-  },
-  "bugs": {
-    "url": "https://github.com/RomanKrupnov/ReactProject/issues"
-  },
-  "homepage": "https://github.com/RomanKrupnov/ReactProject#readme"
+  }
 }
