@@ -1,7 +1,7 @@
-import React from 'react'
-import { List, ListItem } from 'material-ui/List'
-import Subheader from 'material-ui/Subheader'
-import SendIcon from 'material-ui/svg-icons/content/send'
+import React from 'react';
+import { List, ListItem } from 'material-ui/List';
+import Subheader from 'material-ui/Subheader';
+import SendIcon from 'material-ui/svg-icons/content/send';
 
 export default class ChatList extends React.Component {
     render() {

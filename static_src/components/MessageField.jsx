@@ -1,8 +1,8 @@
-import React from 'react'
-import { TextField, FloatingActionButton } from 'material-ui'
-import SendIcon from 'material-ui/svg-icons/content/send'
-import Message from './Message'
-import '../styles/styles.css'
+import React from 'react';
+import { TextField, FloatingActionButton } from 'material-ui';
+import SendIcon from 'material-ui/svg-icons/content/send';
+import Message from './Message';
+import '../styles/styles.css';
 
 export default class MessageField extends React.Component {
     constructor(props) {
@@ -62,7 +62,7 @@ export default class MessageField extends React.Component {
 
     componentWillUnmount() {
         clearTimeout(this.timeout)
-    }
+    };
 
     render() {
 
